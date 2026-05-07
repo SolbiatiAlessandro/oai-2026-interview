@@ -64,3 +64,20 @@ Append-only chronological log of ingests, edits, lints. Newest at the bottom.
   - Per-team pages (Applied, Safety, Scaling, Post-training) deferred.
   - Add a `wiki/people/` directory once we have ≥3 named interviewers
     (currently: Leo Gao, Young Cha — both via S20).
+
+## 2026-05-07 — ML-debugging practice rig
+- Added `wiki/prep/ml-debugging-practice/` — runnable mock of the
+  fix-the-broken-transformer round (sourced from S20).
+  - `model.py`: tiny GPT (causal self-attention + MLP, 2 layers, 4
+    heads, d=64) with 4 planted bugs (missing `1/√d_k` scaling; Q/K/V
+    head-reshape via `view(B, h, T, d_head)` instead of split-then-
+    transpose; softmax over `dim=-2`; missing residual on attention
+    sublayer).
+  - `train.py`: char-LM on `"abcdefghij" * 200` with a planted 5th bug
+    (no `optimizer.zero_grad()`).
+  - `README.md`: candidate-facing prompt, expected loss trajectory.
+  - `SOLUTIONS.md`: each bug with one-sentence "why this is a bug" and
+    the fix.
+- Verified: as-shipped loss bounces 0.3 – 1.0; all-fixes loss reaches
+  ~0.01 within 500 steps.
+- Registered in `index.md` under Prep.

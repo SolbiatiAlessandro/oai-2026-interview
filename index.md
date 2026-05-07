@@ -45,6 +45,8 @@ renaming, or splitting pages.
 - [Timeline & study plan](wiki/prep/timeline.md)
 - [Project deep-dive slide template](wiki/prep/deep-dive-template.md)
 - ["Why OpenAI" answer construction](wiki/prep/why-openai.md)
+- [ML debugging practice rig](wiki/prep/ml-debugging-practice/README.md) —
+  buggy mini-GPT + training loop, mock fix-the-broken-transformer round.
 
 ## Sources
 - [`sources/sources.md`](sources/sources.md) — source registry (S1–S23).
