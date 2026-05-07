@@ -1,0 +1,66 @@
+# Log
+
+Append-only chronological log of ingests, edits, lints. Newest at the bottom.
+
+---
+
+## 2026-05-07 — repo bootstrap
+- Created repository skeleton per CLAUDE.md / Karpathy LLM-Wiki pattern.
+- Wrote README.md, CLAUDE.md (schema), index.md, this log, sources registry.
+- Ingested S1–S22 (initial corpus from public OpenAI interview write-ups,
+  Hello Interview, IGotAnOffer, Medium candidate posts, Sundeep Teki's
+  research-engineer guide, Glassdoor, Blind, OpenAI's own interview-guide
+  page, Karpathy's gist).
+- Created wiki pages:
+  - `wiki/overview.md`
+  - `wiki/roles/{ml-engineer,ml-researcher,research-engineer,software-engineer}.md`
+  - `wiki/rounds/{recruiter,coding,ml-coding,system-design,ml-system-design,deep-dive,behavioral,technical-project-presentation}.md`
+  - `wiki/questions/{coding,ml,system-design,behavioral}-questions.md`
+  - `wiki/topics/transformers.md`
+  - `wiki/tooling/coderpad-and-ai-tools.md`
+  - `wiki/prep/{reading-list,timeline}.md`
+
+## 2026-05-07 — S20 + S23 ingest (primary-source upgrade)
+- **S20**: ingested the repo owner's full prep doc (first-person,
+  contains verbatim recruiter emails for Coding, ML Debug, ML Search
+  Design, Tech Deep Dive). Promoted from `confidence: pending` to
+  `confidence: high`. Raw ingest at
+  `sources/s20-alessandro-prep-doc.md`.
+- **S23**: ingested Alberto Alfarano (Meta sysML peer) chat — six
+  concrete sysML / Triton / scaling-track questions, recommended
+  reading (`fla-org/flash-linear-attention`), cultural signal ("0
+  bullshit, only code firing"). Raw ingest at
+  `sources/s23-alberto-alfarano-chat.md`.
+- New wiki pages added:
+  - `wiki/rounds/ml-debugging.md` (canonical fix-the-broken-transformer
+    round, 60 min, with verbatim recruiter email).
+  - `wiki/rounds/ml-search-design.md` (search/recsys-flavor of ML SD,
+    with verbatim Young Cha description).
+  - `wiki/rounds/xfn.md` (cross-functional partner round).
+  - `wiki/topics/sysml-and-cuda.md` (parallelism, GPU kernels, Triton,
+    autograd-system design — calibrated by S23).
+  - `wiki/prep/deep-dive-template.md` (7-section project-deep-dive
+    template with grading-axes mapping).
+  - `wiki/prep/why-openai.md` (4-ingredient answer-construction
+    template).
+- Updated:
+  - `wiki/roles/ml-engineer.md` — replaced inferred loop with
+    S20-confirmed loop; added pointers to all new round/topic pages.
+  - `wiki/rounds/coding.md` — added verbatim OpenAI recruiter email +
+    evaluation criteria.
+  - `wiki/rounds/behavioral.md` — added 85/15 Meta-Jedi vs.
+    OpenAI-specific mix from S20.
+  - `wiki/questions/coding-questions.md` — added GPU credit class
+    signature, time-based KV follow-ups, tree node-count, `cd` with
+    symlinks.
+  - `wiki/questions/ml-questions.md` — added ML-search/recsys
+    questions and sysML/scaling-track questions.
+  - `wiki/questions/system-design-questions.md` — added sysML
+    scaling-track table.
+  - `index.md` updated to list new pages and raw-source files.
+- Open follow-ups:
+  - S15 (YouTube Senior SWE loop video) still needs transcription.
+  - Compensation page deferred (volatile; needs Levels.fyi + Blind).
+  - Per-team pages (Applied, Safety, Scaling, Post-training) deferred.
+  - Add a `wiki/people/` directory once we have ≥3 named interviewers
+    (currently: Leo Gao, Young Cha — both via S20).
