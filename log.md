@@ -64,3 +64,66 @@ Append-only chronological log of ingests, edits, lints. Newest at the bottom.
   - Per-team pages (Applied, Safety, Scaling, Post-training) deferred.
   - Add a `wiki/people/` directory once we have ≥3 named interviewers
     (currently: Leo Gao, Young Cha — both via S20).
+
+## 2026-05-08 — Alignment Researcher pivot
+- User confirmed the role they're interviewing for is **Researcher,
+  Alignment**. KB primary focus shifted to that loop.
+- Spawned a research agent for a thorough sweep on alignment loop +
+  papers + people + comp; raw output saved as `S24` at
+  `sources/s24-alignment-research-dump.md`.
+- Registered S25-S55 in `sources/sources.md`:
+  - S25: alignment-related job postings (6 distinct postings).
+  - S26: alignment.openai.com (Alignment-Science blog, Dec 2025
+    launch + Dec 2025 posts).
+  - S27-S29: official "Our approach to alignment", "How we think
+    about safety alignment", Evaluations Hub.
+  - S30-S38: paper canon — W2S, Deliberative Alignment, Instruction
+    Hierarchy, Scaling SAEs, CriticGPT, Anti-scheming, CoT
+    monitoring, Alignment Faking, AI Control.
+  - S39-S43: Preparedness Framework v2, Model Spec, Sycophancy
+    retrospectives, Safe Completions, OpenAI×Anthropic cross-lab.
+  - S44: Mission Alignment dissolution coverage (Feb 2026).
+  - S45: Boaz Barak Harvard CS 2881 syllabus.
+  - S46: Lilian Weng Reward-Hacking-in-RL post.
+  - S47-S50: Leike 80kh, Neel Nanda mech interp, AXRP #39 Hubinger,
+    Apollo Research scheming.
+  - S51-S55: Alignment-Forum hiring-noisy post, Achiam Substack,
+    system cards, emergent-misalignment paper, Levels.fyi.
+- New wiki pages added:
+  - `wiki/roles/alignment-researcher.md` (PRIMARY).
+  - `wiki/topics/alignment.md` (topic overview, paper arc).
+  - `wiki/topics/openai-alignment-org.md` (May-2026 org map).
+  - `wiki/topics/rlhf-and-post-training.md` (RLHF → DPO → GRPO →
+    safe completions; reward hacking).
+  - `wiki/topics/scalable-oversight.md` (W2S, CriticGPT, debate).
+  - `wiki/topics/interpretability.md` (SAEs, OpenAI's specific
+    contributions).
+  - `wiki/topics/reward-hacking.md` (Goodhart, sycophancy, emergent
+    misalignment).
+  - `wiki/topics/scheming-and-deceptive-alignment.md` (Apollo,
+    OpenAI×Apollo, alignment-faking, AI control).
+  - `wiki/topics/safety-evals-and-preparedness.md` (PF v2,
+    capability elicitation, contamination, eval awareness,
+    sandbagging).
+  - `wiki/prep/alignment-reading-list.md` (3-tier prioritized list).
+  - `wiki/prep/alignment-timeline.md` (4-week + 8-week + role-
+    variant study plans).
+  - `wiki/questions/alignment-questions.md` (probe-shaped question
+    bank).
+- Updated:
+  - `CLAUDE.md` — Mission section now flags Researcher, Alignment as
+    primary focus.
+  - `wiki/overview.md` — added the alignment-primary banner.
+  - `index.md` — full re-generation with new pages.
+- Open follow-ups for the next research-pass:
+  - **Highest priority**: any first-person OpenAI Alignment Researcher
+    loop writeup (Glassdoor, Blind, LessWrong, podcast, Substack) —
+    currently the largest gap in the KB [S24].
+  - Per-team pages: Alignment Science, Alignment Training,
+    Misalignment Research, Preparedness, Safety Systems.
+  - `wiki/people/` directory — add Boaz Barak, Bowen Baker, Leo Gao,
+    Jeff Wu, Nat McAleese, Joshua Achiam profiles.
+  - alignment.openai.com posts after Dec 2025 (the blog should grow
+    monthly; ingest each new post as it lands).
+  - Levels.fyi snapshot for "Alignment Researcher" specifically if
+    it ever gets broken out.

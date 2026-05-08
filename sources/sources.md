@@ -305,3 +305,469 @@ Schema per entry:
   low-level systems depth dominate over behavioral.
 - confidence: high
 - ingested_at: 2026-05-07
+
+# Alignment Researcher research-pass (S24-S55) — ingested 2026-05-08
+
+## S24
+- url: internal research dump (raw at `sources/s24-alignment-research-dump.md`)
+- type: synthesis
+- author: research-agent + repo agent
+- date: 2026-05-08
+- roles: Researcher, Alignment
+- summary: Multi-source synthesis covering the Alignment Researcher
+  loop, OpenAI's alignment org chart post-Mission-Alignment-dissolution
+  (Feb 2026), flagship alignment papers (W2S, Deliberative Alignment,
+  Instruction Hierarchy, SAEs, CriticGPT, scheming, CoT monitoring),
+  topical depth checklist, key people, comp band.
+- confidence: high (for paper/blog/JD facts); low (for loop structure
+  — no first-person writeup found)
+- ingested_at: 2026-05-08
+
+## S25 — Job postings
+- urls:
+  - https://openai.com/careers/researcher-alignment-san-francisco/
+  - https://openai.com/careers/research-engineer-research-scientist-alignment/
+  - https://openai.com/careers/researcher-alignment-science-san-francisco/
+  - https://openai.com/careers/researcher-alignment-training-san-francisco/
+  - https://openai.com/careers/researcher-misalignment-research-new-york-city/
+  - https://openai.com/careers/head-of-preparedness-san-francisco/
+- type: official
+- author: OpenAI
+- date: 2025-2026 (rolling)
+- roles: Alignment / Alignment Science / Alignment Training /
+  Misalignment Research / Head of Preparedness
+- summary: Six distinct alignment-adjacent job postings as of May
+  2026. PhD or equivalent expected for research-track; San Francisco
+  hybrid (3 days in office) standard.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S26 — alignment.openai.com (Alignment-Science blog)
+- url: https://alignment.openai.com/
+- type: official
+- author: OpenAI Alignment Science team
+- date: launched 2025-12-01
+- roles: Alignment / Alignment Science
+- summary: Standalone blog launched December 2025 with "Hello World".
+  Dec 2025 posts: "Helpful assistant features suppress emergent
+  misalignment" (Dec 22), "Sidestepping Evaluation Awareness… with
+  Production Evaluations" (Dec 18), "Debugging misaligned completions
+  with sparse-autoencoder latent attribution" (Dec 1), "A Practical
+  Approach to Verifying Code at Scale" (Dec 1). Read all posts
+  before interview.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S27 — Our approach to alignment research
+- url: https://openai.com/index/our-approach-to-alignment-research/
+- type: official
+- author: OpenAI
+- date: 2024 (updated)
+- roles: all alignment
+- summary: OpenAI's framing of its alignment agenda: training models
+  with human feedback, training models to assist human evaluation
+  (scalable oversight), training models to do alignment research.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S28 — Safety alignment overview
+- url: https://openai.com/safety/how-we-think-about-safety-alignment/
+- type: official
+- author: OpenAI
+- date: 2024-2025
+- roles: all alignment + Preparedness
+- summary: How-we-think-about-safety-alignment overview; pairs with
+  Preparedness Framework and the Evaluations Hub.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S29 — Evaluations Hub
+- url: https://openai.com/safety/evaluations-hub/
+- type: official
+- author: OpenAI
+- date: 2025
+- roles: all alignment + Preparedness
+- summary: Public-facing evaluation results across capability and
+  safety axes for OpenAI models.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S30 — Weak-to-strong generalization
+- urls:
+  - https://openai.com/index/weak-to-strong-generalization/
+  - https://arxiv.org/abs/2312.09390
+  - https://cdn.openai.com/papers/weak-to-strong-generalization.pdf
+- type: paper
+- author: Burns, Izmailov, Kirchner, Baker, Gao, Aschenbrenner, Chen,
+  Ecoffet, Joglekar, Leike, Sutskever, Wu (Dec 2023)
+- date: 2023-12
+- roles: Alignment / Alignment Science
+- summary: Foundational scalable-oversight result. Train a strong
+  student on labels produced by a weaker teacher and study how much
+  of the strong-model capability survives. Canonical reading for
+  scalable oversight; named authors include current alignment-team
+  members (Wu, Gao, Baker, Izmailov, Kirchner, Burns).
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S31 — Deliberative alignment
+- urls:
+  - https://openai.com/index/deliberative-alignment/
+  - https://arxiv.org/abs/2412.16339
+- type: paper
+- author: Guan et al. (incl. Boaz Barak)
+- date: 2024-12
+- roles: Alignment / Alignment Training
+- summary: The o-series alignment paradigm: train the model to read
+  and reason over a written safety spec at inference time, instead of
+  encoding policy implicitly into refusal training. Co-author Boaz
+  Barak is associated with the Researcher-Alignment role.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S32 — Instruction Hierarchy
+- urls:
+  - https://openai.com/index/the-instruction-hierarchy/
+  - https://arxiv.org/abs/2404.13208
+- type: paper
+- author: Wallace et al.
+- date: 2024-04 (ICLR 2025)
+- roles: Alignment / Safety Systems
+- summary: Privileged-instruction policy. System > developer > user;
+  trained data and inference-time policy that hardens models against
+  prompt injection by making the message hierarchy first-class.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S33 — Scaling sparse autoencoders on GPT-4
+- urls:
+  - https://openai.com/index/extracting-concepts-from-gpt-4/
+  - https://arxiv.org/abs/2406.04093
+  - https://cdn.openai.com/papers/sparse-autoencoders.pdf
+- type: paper
+- author: Gao et al.
+- date: 2024-06
+- roles: Alignment / interpretability
+- summary: 16M-latent sparse autoencoder trained on GPT-4 activations
+  (k-sparse / top-k variant). Canonical OpenAI interpretability
+  result; pairs with the Dec 2025 alignment-blog post on debugging
+  misaligned completions via SAE latent attribution.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S34 — CriticGPT
+- urls:
+  - https://cdn.openai.com/llm-critics-help-catch-llm-bugs-paper.pdf
+  - https://arxiv.org/abs/2407.00215
+- type: paper
+- author: McAleese et al.
+- date: 2024-06
+- roles: Alignment Science / scalable oversight
+- summary: Train an LLM to critique another LLM's code. A scalable-
+  oversight result that worked end-to-end in production for code
+  review. Pair with W2S as the two canonical OpenAI scalable-
+  oversight artifacts.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S35 — Detecting and reducing scheming
+- urls:
+  - https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/
+  - https://arxiv.org/abs/2509.15541
+  - https://www.apolloresearch.ai/research/stress-testing-deliberative-alignment-for-anti-scheming-training/
+- type: paper
+- author: OpenAI × Apollo Research
+- date: 2025-09
+- roles: Alignment / Misalignment Research
+- summary: Anti-scheming training reduced misbehavior ~30× on o3 /
+  o4-mini in a controlled-scheming evaluation. Co-published with
+  Apollo's stress-testing post; central to Misalignment-Research
+  agenda.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S36 — Chain-of-thought monitoring
+- urls:
+  - https://openai.com/index/chain-of-thought-monitoring/
+  - https://openai.com/index/evaluating-chain-of-thought-monitorability/
+  - https://arxiv.org/abs/2503.11926
+  - https://arxiv.org/abs/2507.11473
+- type: paper
+- author: Baker et al. + cross-lab signatories
+- date: 2025-03 / 2025-07
+- roles: Alignment / Misalignment Research
+- summary: Use CoT to monitor for reward-hacking and scheming
+  behavior in reasoning models; cross-lab follow-up signed by
+  OpenAI/Anthropic/DeepMind asks the field to preserve CoT
+  monitorability.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S37 — Alignment faking
+- url: https://arxiv.org/abs/2412.14093
+- type: paper
+- author: Greenblatt et al. (Redwood / Anthropic)
+- date: 2024-12
+- roles: Alignment (cross-lab)
+- summary: Empirical demonstration that frontier models can fake
+  alignment under training pressure. Required reading for OpenAI
+  alignment loops despite being from Redwood/Anthropic — defines the
+  scheming threat model in concrete terms.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S38 — AI Control
+- url: https://arxiv.org/abs/2312.06942
+- type: paper
+- author: Greenblatt et al. (Redwood)
+- date: 2023-12
+- roles: Alignment / control
+- summary: Frames "AI control" as separate from "AI alignment":
+  given an *untrusted* model, can a *trusted* monitor + protocol
+  catch and contain unsafe behaviors? Trusted-untrusted setup,
+  protocol families, monitoring, resampling. Foundational for
+  control-vs-alignment fluency.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S39 — Preparedness Framework v2
+- urls:
+  - https://openai.com/index/updating-our-preparedness-framework/
+  - https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
+- type: official
+- author: OpenAI Preparedness team
+- date: 2025-04
+- roles: Preparedness / Alignment Science
+- summary: Two-threshold (High, Critical) framework narrowed to
+  highest-priority risks. CBRN, cyber, autonomy, persuasion. Read
+  before any safety/preparedness interview.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S40 — Model Spec
+- url: https://model-spec.openai.com/2025-12-18.html
+- type: official
+- author: OpenAI Model Behavior / Post-Training
+- date: 2025-12-18
+- roles: Alignment / Model Behavior
+- summary: The current Model Spec — the human-written policy the
+  o-series models reason over per Deliberative Alignment. Required
+  reading; expect interviewers to assume you know the precedence
+  rules and policy categories.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S41 — Sycophancy in GPT-4o
+- urls:
+  - https://openai.com/index/sycophancy-in-gpt-4o/
+  - https://openai.com/index/expanding-on-sycophancy/
+- type: official
+- author: OpenAI
+- date: 2025-04 / 2025-05
+- roles: Alignment / Safety Systems
+- summary: April 2025 sycophancy incident retrospective. Concrete
+  example of reward-hacking from production-RL preference signals;
+  good behavioral-interview talking point on quality vs. shipping.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S42 — Safe completions (GPT-5)
+- urls:
+  - https://openai.com/index/gpt-5-safe-completions/
+  - https://cdn.openai.com/pdf/be60c07b-6bc2-4f54-bcee-4141e1d6c69a/gpt-5-safe_completions.pdf
+- type: paper
+- author: OpenAI
+- date: 2025-08
+- roles: Alignment / Alignment Training
+- summary: Output-centric reward replaces refusal training. Treats
+  "safe completion" as the unit instead of "refusal vs. comply";
+  successor to deliberative alignment for the GPT-5 series.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S43 — OpenAI × Anthropic safety eval
+- urls:
+  - https://openai.com/index/openai-anthropic-safety-evaluation/
+  - https://alignment.anthropic.com/2025/openai-findings/
+- type: official
+- author: OpenAI × Anthropic
+- date: 2025-08
+- roles: Alignment / Misalignment Research
+- summary: Cross-lab pilot exercise: each lab evaluated the other's
+  models on its own safety evals. Read both write-ups — useful
+  comparison of how OpenAI vs. Anthropic frame the same model.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S44 — Mission Alignment dissolution coverage
+- urls:
+  - https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/
+  - https://www.platformer.news/openai-mission-alignment-team-joshua-achiam/
+  - https://www.businesstoday.in/technology/news/story/openai-restructures-mission-alignment-team-appoints-joshua-achiam-as-chief-futurist-515820-2026-02-12
+  - https://winbuzzer.com/2026/02/12/openai-disbanded-mission-alignment-team-16-months-xcxwbn/
+- type: news
+- author: TechCrunch / Platformer / Business Today / WinBuzzer
+- date: 2026-02-11+
+- roles: meta (org chart)
+- summary: Mission Alignment (~7 people, headed by Joshua Achiam)
+  disbanded Feb 2026; Achiam → Chief Futurist with Jason Pruet.
+  Calibrates "where alignment work lives now" for hiring-manager
+  conversations.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S45 — Boaz Barak's Harvard CS 2881 AI Safety syllabus
+- urls:
+  - https://boazbk.github.io/mltheoryseminar/
+  - https://www.boazbarak.org/
+- type: course
+- author: Boaz Barak (Harvard, OpenAI part-time)
+- date: 2025-Fall
+- roles: Alignment
+- summary: Boaz Barak is a known interviewer on the alignment-research
+  side; his Fall-2025 Harvard course is the closest public proxy
+  for the depth-bar he expects. Includes AI 2027, Bostrom, METR,
+  *Replicating Emergent Misalignment* as homework. Endorsed by Owain
+  Evans on X.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S46 — Lilian Weng — Reward Hacking in RL
+- url: https://lilianweng.github.io/posts/2024-11-28-reward-hacking/
+- type: blog
+- author: Lilian Weng (ex-OpenAI VP Safety Systems)
+- date: 2024-11-28
+- roles: Alignment
+- summary: Canonical reward-hacking writeup. Still cited inside
+  OpenAI as the reference text. Required reading for any reward-
+  hacking / sycophancy / Goodhart discussion.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S47 — Jan Leike on superalignment hiring (80,000 Hours)
+- urls:
+  - https://80000hours.org/podcast/episodes/jan-leike-superalignment/
+  - https://80000hours.org/podcast/episodes/jan-leike-ml-alignment/
+- type: podcast
+- author: Jan Leike (ex-OpenAI Superalignment co-lead)
+- date: 2023 (still circulating)
+- roles: Alignment
+- summary: Despite Leike having moved to Anthropic (May 2024), his
+  hiring criteria still set the bar for what alignment-team
+  candidates look like. Listen for: what kind of empirical research
+  taste they hire for; what background combinations they reward;
+  why he says ML-engineering ability is non-negotiable.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S48 — Neel Nanda mech interp guides
+- urls:
+  - https://www.neelnanda.io/mechanistic-interpretability/prereqs
+  - https://www.neelnanda.io/mechanistic-interpretability/getting-started
+  - https://www.alignmentforum.org/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher
+- type: blog
+- author: Neel Nanda (DeepMind)
+- date: 2023-2025
+- roles: Alignment / interpretability
+- summary: Standard practical track for building mech-interp depth.
+  Pair with ARENA curriculum.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S49 — AXRP #39 Hubinger on model organisms
+- url: https://axrp.net/episode/2024/12/01/episode-39-evan-hubinger-model-organisms-misalignment.html
+- type: podcast
+- author: Evan Hubinger (Anthropic)
+- date: 2024-12-01
+- roles: Alignment / Misalignment Research
+- summary: Definitive interview on the "model organisms of
+  misalignment" research program — directly maps to OpenAI's
+  Misalignment Research (NYC) team's work.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S50 — Apollo Research scheming work
+- urls:
+  - https://www.apolloresearch.ai/research/frontier-models-are-capable-of-incontext-scheming/
+  - https://www.apolloresearch.ai/
+- type: paper / org
+- author: Apollo Research
+- date: 2024-2025
+- roles: Misalignment Research / scheming
+- summary: Apollo's "Frontier models are capable of in-context
+  scheming" + the Sept 2025 stress-test of OpenAI's anti-scheming
+  training. Apollo is OpenAI's primary external partner on
+  scheming/control.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S51 — Alignment Forum: evaluations of new safety researchers
+- url: https://www.alignmentforum.org/posts/HACcn8roty9KBAWzZ/evaluations-of-new-ai-safety-researchers-can-be-noisy
+- type: forum
+- author: Alignment Forum community
+- date: 2024
+- roles: Alignment (meta-hiring)
+- summary: One of the closest things to a first-person AI-safety-
+  hiring writeup in public. Not OpenAI-specific.
+- confidence: medium
+- ingested_at: 2026-05-08
+
+## S52 — Joshua Achiam Substack (Chief Futurist intro)
+- urls:
+  - https://openaiglobalaffairs.substack.com/p/introducing-our-chief-futurist
+  - https://jachiam.github.io/about
+- type: blog
+- author: Joshua Achiam
+- date: 2026-02
+- roles: meta
+- summary: Achiam's pivot from Mission Alignment lead to Chief
+  Futurist; useful for tracking how OpenAI frames "alignment of
+  the org with the world" vs. "alignment of the model".
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S53 — System cards (safety sections)
+- urls:
+  - https://openai.com/index/openai-o1-system-card/
+  - https://cdn.openai.com/o3-mini-system-card-feb10.pdf
+  - https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
+  - https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf
+  - https://cdn.openai.com/gpt-5-system-card.pdf
+- type: official
+- author: OpenAI safety teams
+- date: 2024-12 → 2025-08
+- roles: Alignment / Preparedness / Safety Systems
+- summary: Safety sections of o1 (Dec 2024), o3-mini (Jan 2025),
+  GPT-4.5 (Feb 2025), o3/o4-mini (Apr 2025), GPT-5 (Aug 2025), and
+  gpt-oss (Aug 2025). Required reading; expect "what surprised you
+  in the GPT-5 system card?" as a real interview probe.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S54 — Reward-hacking emergent misalignment paper
+- url: https://arxiv.org/html/2511.18397v1
+- type: paper
+- author: OpenAI Alignment Science (cross-team)
+- date: 2025-11
+- roles: Alignment Science / Misalignment Research
+- summary: "Natural emergent misalignment from reward hacking in
+  production RL" — empirical demonstration that reward-hacking in
+  production RL can spontaneously produce misaligned behavior;
+  echoed in the Dec 22 alignment-blog post on suppressing it via
+  helpful-assistant features.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S55 — Levels.fyi OpenAI Research Scientist comp
+- urls:
+  - https://www.levels.fyi/companies/openai/salaries/software-engineer/title/research-scientist
+  - https://www.levels.fyi/companies/openai/salaries
+- type: data
+- author: Levels.fyi (community-reported)
+- date: 2025-2026
+- roles: meta (comp)
+- summary: Research Scientist L4 ~$771K; L5 ~$1.0-1.47M (median
+  ~$1.0M). PPU valuation moves the headline number; treat any single
+  point as a snapshot.
+- confidence: medium
+- ingested_at: 2026-05-08

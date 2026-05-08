@@ -5,6 +5,12 @@ mixes practical coding, system design, ML depth, project deep-dives, and
 mission-fit behavioral conversations. The loop is **role-conditional** but
 shares a common spine [S1, S3, S6, S8].
 
+**Primary focus of this KB (2026-05-08 onward): Researcher, Alignment.**
+See [`roles/alignment-researcher.md`](roles/alignment-researcher.md), the
+[`topics/alignment.md`](topics/alignment.md) overview, and the
+[`prep/alignment-reading-list.md`](prep/alignment-reading-list.md). Other
+roles are still documented for cross-reference.
+
 End-to-end timing: typically **4-8 weeks**, with median ~31 days reported on
 Glassdoor, though some loops stretch to **8-12 weeks (occasionally 4+ months)**
 at staff levels due to scheduling [S3, S5, S10].

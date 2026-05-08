@@ -13,10 +13,22 @@ file describes the bookkeeping.
 ## Mission
 
 Maintain an up-to-date, high-signal knowledge base on how OpenAI interviews
-candidates in 2026, across roles (primary: ML Engineer; also ML Researcher,
-Research Engineer, Software Engineer, Applied AI / Forward-Deployed). The KB
-is built from publicly available sources only (blog posts, YouTube,
-Glassdoor, Blind, Reddit, podcasts, OpenAI's own pages, candidate writeups).
+candidates in 2026.
+
+**Primary focus (2026-05-08 onward): Researcher, Alignment.** The repo owner
+is interviewing for this role, so the KB optimizes depth on alignment
+research (post-training / RLHF / safe completions, scalable oversight,
+mech interp / SAEs, reward hacking, scheming / deceptive alignment, eval
+design / Preparedness). See `wiki/roles/alignment-researcher.md`.
+
+**Secondary roles still covered**: ML Engineer, ML Researcher, Research
+Engineer, Software Engineer, Applied AI / Forward-Deployed. These pages
+remain useful because the alignment loop reuses the coding screen and ML
+coding screen from those tracks.
+
+The KB is built from publicly available sources only (blog posts, YouTube,
+Glassdoor, Blind, Reddit, LessWrong, Alignment Forum, podcasts, OpenAI's
+own pages, candidate writeups, papers).
 
 No private/NDA material. No personal candidate data beyond what authors
 publicly self-disclose.

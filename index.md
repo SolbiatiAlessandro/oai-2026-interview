@@ -7,7 +7,8 @@ renaming, or splitting pages.
 - [Overview](wiki/overview.md) — OpenAI's interview process at a glance.
 
 ## Roles (`wiki/roles/`)
-- [ML Engineer](wiki/roles/ml-engineer.md) — primary focus.
+- [**Researcher, Alignment** (primary focus)](wiki/roles/alignment-researcher.md)
+- [ML Engineer](wiki/roles/ml-engineer.md)
 - [ML Researcher / Member of Technical Staff](wiki/roles/ml-researcher.md)
 - [Research Engineer (RE)](wiki/roles/research-engineer.md)
 - [Software Engineer](wiki/roles/software-engineer.md)
@@ -26,33 +27,45 @@ renaming, or splitting pages.
 - [XFN (cross-functional partner)](wiki/rounds/xfn.md)
 
 ## Question banks (`wiki/questions/`)
+- [**Alignment-specific questions**](wiki/questions/alignment-questions.md)
 - [Coding questions](wiki/questions/coding-questions.md)
-- [ML questions](wiki/questions/ml-questions.md) — incl. ML-debug
-  scenarios, ML-search/recsys, sysML/scaling.
+- [ML questions](wiki/questions/ml-questions.md) — incl. ML-debug,
+  ML-search/recsys, sysML/scaling.
 - [System-design questions](wiki/questions/system-design-questions.md)
 - [Behavioral questions](wiki/questions/behavioral-questions.md)
 
 ## Topics (`wiki/topics/`)
+- [**Alignment** (topic overview)](wiki/topics/alignment.md)
+- [**OpenAI alignment org map**](wiki/topics/openai-alignment-org.md)
+- [**Post-training & RLHF / DPO / GRPO / Safe completions**](wiki/topics/rlhf-and-post-training.md)
+- [**Scalable oversight**](wiki/topics/scalable-oversight.md)
+- [**Mechanistic interpretability**](wiki/topics/interpretability.md)
+- [**Reward hacking & emergent misalignment**](wiki/topics/reward-hacking.md)
+- [**Scheming & deceptive alignment**](wiki/topics/scheming-and-deceptive-alignment.md)
+- [**Safety evals & Preparedness**](wiki/topics/safety-evals-and-preparedness.md)
 - [Transformers & attention](wiki/topics/transformers.md)
-- [sysML & CUDA / Triton](wiki/topics/sysml-and-cuda.md) —
-  scaling-track depth.
+- [sysML & CUDA / Triton](wiki/topics/sysml-and-cuda.md)
 
 ## Tooling (`wiki/tooling/`)
 - [CoderPad & AI tools in OpenAI interviews](wiki/tooling/coderpad-and-ai-tools.md)
 
 ## Prep (`wiki/prep/`)
-- [Reading list](wiki/prep/reading-list.md)
-- [Timeline & study plan](wiki/prep/timeline.md)
+- [**Alignment reading list**](wiki/prep/alignment-reading-list.md)
+- [**Alignment timeline / study plan**](wiki/prep/alignment-timeline.md)
+- [Reading list (general)](wiki/prep/reading-list.md)
+- [Timeline & study plan (general)](wiki/prep/timeline.md)
 - [Project deep-dive slide template](wiki/prep/deep-dive-template.md)
 - ["Why OpenAI" answer construction](wiki/prep/why-openai.md)
 
 ## Sources
-- [`sources/sources.md`](sources/sources.md) — source registry (S1–S23).
+- [`sources/sources.md`](sources/sources.md) — source registry (S1–S55).
 - Raw ingests:
   - [`sources/s20-alessandro-prep-doc.md`](sources/s20-alessandro-prep-doc.md)
     — first-person ML-Engineer prep doc with verbatim recruiter emails.
   - [`sources/s23-alberto-alfarano-chat.md`](sources/s23-alberto-alfarano-chat.md)
-    — sysML / Triton / scaling-track signal from a Meta peer.
+    — sysML / Triton / scaling-track signal.
+  - [`sources/s24-alignment-research-dump.md`](sources/s24-alignment-research-dump.md)
+    — Alignment Researcher research-pass synthesis.
 
 ## Meta
 - [`log.md`](log.md) — ingest/edit timeline.
