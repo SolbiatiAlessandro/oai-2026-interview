@@ -1,6 +1,7 @@
 """Tiny character-level GPT. Contains bugs. Loss will not go down."""
 
 import math
+from typing import Optional
 
 import torch
 import torch.nn as nn
@@ -72,7 +73,7 @@ class TinyGPT(nn.Module):
         self.ln_f = nn.LayerNorm(d_model)
         self.head = nn.Linear(d_model, vocab_size, bias=False)
 
-    def forward(self, idx: torch.Tensor, targets: torch.Tensor | None = None):
+    def forward(self, idx: torch.Tensor, targets: Optional[torch.Tensor] = None):
         B, T = idx.shape
         pos = torch.arange(T, device=idx.device)
         x = self.tok_emb(idx) + self.pos_emb(pos)
