@@ -26,9 +26,17 @@ Engineer, Software Engineer, Applied AI / Forward-Deployed. These pages
 remain useful because the alignment loop reuses the coding screen and ML
 coding screen from those tracks.
 
+**Cross-lab coverage** (2026-05-08 onward): the KB also documents
+Anthropic's alignment-research loop and paper canon under
+`wiki/cross-lab/`. Rationale: (a) the *"why OpenAI vs Anthropic"*
+behavioral probe is asked on nearly every OpenAI alignment loop, and
+(b) Anthropic-side papers (Sleeper Agents, Alignment Faking, the
+interpretability canon, Petri) are required reading on the OpenAI
+alignment loop.
+
 The KB is built from publicly available sources only (blog posts, YouTube,
 Glassdoor, Blind, Reddit, LessWrong, Alignment Forum, podcasts, OpenAI's
-own pages, candidate writeups, papers).
+own pages, Anthropic's own pages, candidate writeups, papers).
 
 No private/NDA material. No personal candidate data beyond what authors
 publicly self-disclose.
@@ -49,6 +57,7 @@ wiki/
   rounds/<round>.md
   questions/<round>-questions.md
   topics/<topic>.md
+  cross-lab/<lab-or-comparison>.md   # Anthropic, DeepMind, etc.
   tooling/<tool>.md
   prep/<artifact>.md
 ```

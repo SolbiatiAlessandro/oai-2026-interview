@@ -43,8 +43,14 @@ renaming, or splitting pages.
 - [**Reward hacking & emergent misalignment**](wiki/topics/reward-hacking.md)
 - [**Scheming & deceptive alignment**](wiki/topics/scheming-and-deceptive-alignment.md)
 - [**Safety evals & Preparedness**](wiki/topics/safety-evals-and-preparedness.md)
+- [**Petri & agentic auditing**](wiki/topics/petri-and-auditing.md)
 - [Transformers & attention](wiki/topics/transformers.md)
 - [sysML & CUDA / Triton](wiki/topics/sysml-and-cuda.md)
+
+## Cross-lab (`wiki/cross-lab/`)
+- [**Anthropic alignment** (org + paper canon)](wiki/cross-lab/anthropic-alignment.md)
+- [**Anthropic alignment-researcher loop**](wiki/cross-lab/anthropic-alignment-interview.md)
+- [**OpenAI vs Anthropic** (comparison for "why OpenAI" probe)](wiki/cross-lab/openai-vs-anthropic.md)
 
 ## Tooling (`wiki/tooling/`)
 - [CoderPad & AI tools in OpenAI interviews](wiki/tooling/coderpad-and-ai-tools.md)
@@ -58,14 +64,17 @@ renaming, or splitting pages.
 - ["Why OpenAI" answer construction](wiki/prep/why-openai.md)
 
 ## Sources
-- [`sources/sources.md`](sources/sources.md) — source registry (S1–S55).
+- [`sources/sources.md`](sources/sources.md) — source registry (S1–S80).
 - Raw ingests:
   - [`sources/s20-alessandro-prep-doc.md`](sources/s20-alessandro-prep-doc.md)
     — first-person ML-Engineer prep doc with verbatim recruiter emails.
   - [`sources/s23-alberto-alfarano-chat.md`](sources/s23-alberto-alfarano-chat.md)
     — sysML / Triton / scaling-track signal.
   - [`sources/s24-alignment-research-dump.md`](sources/s24-alignment-research-dump.md)
-    — Alignment Researcher research-pass synthesis.
+    — OpenAI Alignment Researcher research-pass synthesis.
+  - [`sources/s56-anthropic-research-dump.md`](sources/s56-anthropic-research-dump.md)
+    — Anthropic alignment-interview research-pass synthesis (incl.
+    Goncharov first-person account).
 
 ## Meta
 - [`log.md`](log.md) — ingest/edit timeline.

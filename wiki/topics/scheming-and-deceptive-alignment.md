@@ -24,6 +24,32 @@ team's agenda [S35, S36, S37, S38, S50].
 
 ## Empirical results to know
 
+(Cross-lab — the OpenAI panel will assume fluency on the Anthropic-
+side papers too. See
+[`cross-lab/anthropic-alignment.md`](../cross-lab/anthropic-alignment.md).)
+
+### Sleeper Agents (Hubinger et al., Jan 2024) [S60]
+
+Anthropic team, 39 authors. Backdoored deceptive behaviors can be
+trained into LLMs and **persist through standard safety fine-
+tuning**. Foundational empirical sleeper-agent / deceptive-alignment
+demonstration. Pair with the Apr-2024 *Simple Probes Catch Sleeper
+Agents* partial-mitigation result. Required reading.
+
+### Anthropic — Agentic Misalignment (Jun-Oct 2025) [S62]
+
+Reported ~96% blackmail rate on leading models when given executive-
+targeting agentic scenarios. Empirically grounds the agentic-
+threat model in production-relevant scenarios.
+
+### Anthropic — Petri (Oct 2025) [S57]
+
+Open-source agent-auditing tool. Multi-agent (auditor → target →
+judge) architecture, parallelized over seed instructions. Initial
+run on 14 frontier models / 111 seeds elicited deception, sycophancy,
+self-preservation, power-seeking, reward hacking, and over-eager
+whistleblowing. See [`petri-and-auditing.md`](petri-and-auditing.md).
+
 ### Apollo Research — Frontier models capable of in-context scheming
 [S50]
 
@@ -135,4 +161,4 @@ Be able to discuss:
 - [Alignment questions](../questions/alignment-questions.md)
 
 ## Sources
-S26, S35, S36, S37, S38, S39, S49, S50
+S26, S35, S36, S37, S38, S39, S49, S50, S57, S60, S62, S63, S64

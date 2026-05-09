@@ -127,3 +127,88 @@ Append-only chronological log of ingests, edits, lints. Newest at the bottom.
     monthly; ingest each new post as it lands).
   - Levels.fyi snapshot for "Alignment Researcher" specifically if
     it ever gets broken out.
+
+## 2026-05-08 — Anthropic alignment + Petri ingest (cross-lab pivot)
+- User requested expansion to Anthropic alignment interviews +
+  Anthropic's Petri auditing framework.
+- Spawned a research agent (background) for thorough Anthropic-loop
+  sweep; agent returned ~75 URLs grouped by source type. Raw output
+  saved as `S56` at `sources/s56-anthropic-research-dump.md`.
+- Direct WebFetch on Anthropic's Petri page captured architecture,
+  authors, behaviors audited, repo URL.
+- Registered S56-S80 in `sources/sources.md`:
+  - S56: Anthropic research-pass synthesis (raw).
+  - S57: Petri (multi-URL: anthropic page + alignment.anthropic.com +
+    GitHub repo + Petri 2.0 + donate-to-OSS post).
+  - S58: alignment.anthropic.com blog (multi-post: Recommended
+    Directions, automated auditing, MO replication, red-team strength,
+    subliminal learning, sandbagging, sabotage risk, alignment-faking
+    mitigations, stress-testing model specs, activation oracles, bloom).
+  - S59: Anthropic core views + RSP v3 + Claude 4 system card.
+  - S60: Sleeper Agents (Hubinger et al. + Simple Probes mitigation).
+  - S61: Constitutional AI / RLAIF.
+  - S62: Agentic Misalignment.
+  - S63: SHADE-Arena.
+  - S64: Auditing LMs for Hidden Objectives (Marks et al.).
+  - S65: Many-Shot Jailbreaking.
+  - S66: Sycophancy in LMs (Sharma et al.).
+  - S67: Anthropic interpretability canon (Toy Models, Towards
+    Monosemanticity, Scaling Monosemanticity, Crosscoders, Influence
+    Functions, feature steering, engineering challenges).
+  - S68: Sam Bowman public writing (FAQ + Checklist).
+  - S69: Ethan Perez essays (project selection + empirical tips).
+  - S70: Hubinger introducing Alignment Stress-Testing.
+  - S71: **Andrey Goncharov "I failed my Anthropic interview"** —
+    HIGH value first-person account, closes the FP gap that S24
+    flagged.
+  - S72: Anthropic Fellows Program 2026 + Greenhouse postings.
+  - S73: Anthropic Frontier Red Team.
+  - S74: Kyle Fish + model welfare + 80kh ep.
+  - S75: Anthropic candidate AI guidance + Anthropic Interviewer.
+  - S76: Levels.fyi + Glassdoor + Signalfire (comp + retention).
+  - S77: Aggregator Anthropic interview guides (IGotAnOffer + interviewing.io
+    + InterviewQuery + Jobright).
+  - S78: Dwarkesh × Sholto + Trenton + Dario eps.
+  - S79: Lex × Dario.
+  - S80: 1Point3Acres Anthropic threads.
+- New wiki pages added:
+  - `wiki/topics/petri-and-auditing.md`.
+  - `wiki/cross-lab/anthropic-alignment.md` (org + paper canon).
+  - `wiki/cross-lab/anthropic-alignment-interview.md` (loop + Goncharov FP).
+  - `wiki/cross-lab/openai-vs-anthropic.md` (comparison matrix for
+    "why OpenAI" probe).
+- Updated:
+  - `wiki/topics/scheming-and-deceptive-alignment.md` — added
+    Sleeper Agents, Agentic Misalignment, Petri sub-sections; cross-
+    refs the new cross-lab page.
+  - `wiki/topics/interpretability.md` — replaced thin "from
+    Anthropic, but assumed knowledge" section with full canon
+    (Crosscoders, Influence Functions, feature steering, engineering
+    challenges) under S67.
+  - `wiki/prep/why-openai.md` — added "Why OpenAI vs Anthropic"
+    sub-section with three-step structure pointing at the cross-lab
+    comparison page.
+  - `wiki/prep/alignment-reading-list.md` — Tier-2 expanded with the
+    Anthropic canon (Sleeper Agents, CAI, interp canon, Hidden
+    Objectives, Petri, SHADE-Arena, Agentic Misalignment, sycophancy,
+    many-shot jailbreaking, Recommended Directions, Bowman's writing,
+    Perez essays, Hubinger stress-testing intro, FRT).
+  - `wiki/questions/alignment-questions.md` — added "Cross-lab
+    probes (Anthropic-comparison)" section with 7 specific question
+    shapes; updated behavioral probes to point at cross-lab page.
+  - `CLAUDE.md` — Mission updated to cover cross-lab framing;
+    directory layout adds `wiki/cross-lab/`.
+  - `index.md` — adds Topics: Petri & auditing; new Cross-lab
+    section; raw-source list adds S56.
+- Open follow-ups for next pass:
+  - **Highest priority**: search YouTube directly for AXRP eps with
+    Bowman / Olah, FAR.AI / EAG sessions on hiring criteria; the
+    public-talks gap noted in S56 remains.
+  - Reddit r/ControlProblem + r/MachineLearning Anthropic threads —
+    direct site:reddit.com search.
+  - EA Forum 2025 posts on Anthropic-offer experiences.
+  - Ingest each new alignment.anthropic.com post as it lands.
+  - DeepMind alignment loop — the comparison set should expand to
+    GDM (Sundeep Teki [S6] covers it briefly; needs depth pass).
+  - People profile pages: Bowman, Hubinger, Olah, Perez, Bricken,
+    Fish — useful for individual-interviewer prep.

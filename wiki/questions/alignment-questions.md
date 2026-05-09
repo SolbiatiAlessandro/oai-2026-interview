@@ -96,10 +96,30 @@ high-recall, calibrate with your recruiter).
 - "What's an alignment direction OpenAI is *not* working on that you
   think it should?"
 
+## Cross-lab probes (Anthropic-comparison)
+
+(See [`cross-lab/openai-vs-anthropic.md`](../cross-lab/openai-vs-anthropic.md)
+for the comparison matrix.)
+
+- "Walk me through the arc of Anthropic's alignment research and
+  compare it to ours." [S58, S77]
+- "How does Constitutional AI [S61] compare to Deliberative Alignment
+  [S31]? Where does each break?"
+- "What does Anthropic do better than us? What do we do better?" [S77]
+- "Walk me through Petri [S57]. Why did Anthropic open-source it? What
+  would the equivalent OpenAI infrastructure look like?"
+- "Critique Sleeper Agents [S60] as a research methodology — strongest
+  objection?"
+- "Pick a paper from `transformer-circuits.pub` [S67] you found
+  insightful. What would the OpenAI version look like?"
+- "How would you stress-test the Model Spec [S40]? Anthropic published
+  a paper on this [S58]; critique it."
+
 ## Behavioral probes (alignment-flavored)
 
-- "Why OpenAI vs. Anthropic vs. SSI?" [S24] — see
-  [why-openai](../prep/why-openai.md).
+- "Why OpenAI vs. Anthropic vs. SSI?" [S24, S77] — see
+  [why-openai](../prep/why-openai.md) and
+  [openai-vs-anthropic](../cross-lab/openai-vs-anthropic.md).
 - "What would you do if you found a model behaving in a misaligned
   way during training?" [S24]
 - "Tell me about a time you raised a concern about AI safety or
@@ -139,4 +159,4 @@ alignment role:
 - [ML questions](ml-questions.md)
 
 ## Sources
-S2, S3, S6, S19, S20, S24-S55
+S2, S3, S6, S19, S20, S24-S55, S57, S58, S60, S61, S64, S67, S77

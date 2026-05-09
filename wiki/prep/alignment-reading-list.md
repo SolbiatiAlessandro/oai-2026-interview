@@ -62,7 +62,33 @@ Skim all; read the most-recent two end-to-end [S53]:
 
 ## Tier 2 — high-leverage external
 
-### Cross-lab alignment papers
+### Anthropic alignment canon (the OpenAI panel assumes you've read)
+
+For full context see
+[`cross-lab/anthropic-alignment.md`](../cross-lab/anthropic-alignment.md)
+and
+[`cross-lab/anthropic-alignment-interview.md`](../cross-lab/anthropic-alignment-interview.md).
+
+- *Sleeper Agents* (Hubinger et al., Jan 2024) [S60]. Required.
+- *Constitutional AI / RLAIF* (Bai et al., Dec 2022) [S61]. Required.
+- *Anthropic interpretability canon* — Toy Models of Superposition →
+  Towards Monosemanticity → Scaling Monosemanticity → Crosscoders +
+  Influence Functions [S67]. Required end-to-end if interp is your
+  area; required-skim otherwise.
+- *Auditing LMs for Hidden Objectives* (Marks et al., Mar 2025) [S64].
+- *Petri* release post + tech report (Oct 2025) [S57] — pair with
+  [`topics/petri-and-auditing.md`](../topics/petri-and-auditing.md).
+- *SHADE-Arena* (Kutasov et al., Jun 2025) [S63].
+- *Agentic Misalignment* (Anthropic, Jun-Oct 2025) [S62].
+- *Sycophancy in LMs* (Sharma et al., ICLR 2024) [S66].
+- *Many-Shot Jailbreaking* (Anil et al., NeurIPS 2024) [S65].
+- *Anthropic Recommended Directions* (Bowman et al., 2025) [S58].
+- *Sam Bowman's FAQ + The Checklist* [S68] — hiring-criteria proxy.
+- *Ethan Perez project-selection + empirical-tips essays* [S69].
+- *Hubinger's Alignment Stress-Testing intro* [S70].
+- *Anthropic Frontier Red Team* [S73] — for FRT-flavor candidates.
+
+### Other cross-lab alignment papers
 
 - Greenblatt et al. — *Alignment Faking* (Dec 2024) [S37].
 - Greenblatt et al. — *AI Control: Improving Safety Despite

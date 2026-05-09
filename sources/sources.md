@@ -771,3 +771,442 @@ Schema per entry:
   point as a snapshot.
 - confidence: medium
 - ingested_at: 2026-05-08
+
+# Anthropic alignment-interview research-pass (S56-S80) — ingested 2026-05-08
+
+## S56
+- url: internal research dump (raw at `sources/s56-anthropic-research-dump.md`)
+- type: synthesis
+- author: research-agent + repo agent
+- date: 2026-05-08
+- roles: Anthropic Alignment Researcher / MTS-Alignment / cross-lab
+- summary: Multi-source synthesis of Anthropic's alignment-research
+  hiring loop, org chart, paper canon, hiring-criteria public signals,
+  Petri / agentic-auditing methodology, comp band, distinctions vs
+  OpenAI's loop. Includes the Goncharov first-person Fellowship-track
+  account.
+- confidence: high (paper / blog / JD facts); medium (loop structure)
+- ingested_at: 2026-05-08
+
+## S57 — Petri (open-source agent auditing)
+- urls:
+  - https://www.anthropic.com/research/petri-open-source-auditing
+  - https://alignment.anthropic.com/2025/petri/
+  - https://alignment.anthropic.com/2026/petri-v2/
+  - https://github.com/safety-research/petri
+  - https://safety-research.github.io/petri/
+  - https://www.anthropic.com/research/donating-open-source-petri
+- type: official + repo
+- author: Fronsdal, Gupta, Sheshadri, Michala, McAleer, Wang, Price,
+  Bowman (Anthropic + Anthropic Fellows)
+- date: 2025-10-07; v2 in 2026
+- roles: Anthropic Alignment / cross-lab
+- summary: Parallel Exploration Tool for Risky Interactions. Multi-
+  agent auditor → target → judge architecture, parallelized over
+  seed instructions. Initial run: 14 frontier models, 111 seeds.
+  Behaviors: deception, sycophancy, encouragement of user delusion,
+  cooperation with harmful requests, self-preservation, power-seeking,
+  reward hacking. Built on UK AISI's Inspect framework; UK AISI is a
+  public user. Donated to open-source as a "race to the top on
+  auditing" signal. Origin story is via MATS + Fellows — relevant for
+  candidate-pipeline framing.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S58 — alignment.anthropic.com (Alignment Science blog)
+- urls:
+  - https://alignment.anthropic.com/
+  - https://alignment.anthropic.com/2025/recommended-directions/
+  - https://alignment.anthropic.com/2025/automated-auditing/
+  - https://alignment.anthropic.com/2025/auditing-mo-replication/
+  - https://alignment.anthropic.com/2025/strengthening-red-teams/
+  - https://alignment.anthropic.com/2025/subliminal-learning/
+  - https://alignment.anthropic.com/2025/automated-researchers-sandbag/
+  - https://alignment.anthropic.com/2025/sabotage-risk-report/2025_pilot_risk_report.pdf
+  - https://alignment.anthropic.com/2025/alignment-faking-mitigations/
+  - https://alignment.anthropic.com/2025/stress-testing-model-specs/
+  - https://alignment.anthropic.com/2025/activation-oracles/
+  - https://alignment.anthropic.com/2025/bloom-auto-evals/
+- type: official
+- author: Anthropic Alignment Science team
+- date: 2025-2026 (rolling)
+- roles: Anthropic Alignment / cross-lab
+- summary: Anthropic's standalone alignment-science blog. *Recommended
+  Directions* is the explicit menu of open problems candidates are
+  expected to engage with. Covers automated auditing, model-organism
+  replications, red-team strengthening, subliminal learning, sandbagging
+  in automated researchers, sabotage risk, alignment-faking
+  mitigations, stress-testing the Model Spec, activation oracles,
+  Bloom (auto-evals).
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S59 — Anthropic core-views + RSP + system cards
+- urls:
+  - https://www.anthropic.com/research/core-views-on-ai-safety
+  - https://www.anthropic.com/responsible-scaling-policy
+  - https://www.anthropic.com/news/responsible-scaling-policy-v3
+  - https://www.anthropic.com/claude-4-system-card
+- type: official
+- author: Anthropic
+- date: 2023-2026 rolling; RSP v3 effective Feb 24 2026
+- roles: Anthropic Alignment / cross-lab
+- summary: Foundational policy / strategy artifacts. Required reading
+  for "why Anthropic" mission-fit answers. RSP v3 introduces the
+  ASL-3-effective regime; Claude 4 system card pairs with deployment
+  decisions.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S60 — Sleeper Agents
+- urls:
+  - https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training
+  - https://arxiv.org/abs/2401.05566
+  - https://www.anthropic.com/research/probes-catch-sleeper-agents
+- type: paper
+- author: Hubinger et al. (39 authors)
+- date: 2024-01
+- roles: cross-lab (deceptive alignment / model organisms)
+- summary: Demonstrates that backdoored deceptive behaviors can be
+  trained into LLMs and persist through standard safety fine-tuning.
+  Foundational empirical sleeper-agent / deceptive-alignment
+  demonstration. Paired with the Apr-2024 *Simple Probes Catch
+  Sleeper Agents* mitigation result.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S61 — Constitutional AI / RLAIF
+- urls:
+  - https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback
+  - https://arxiv.org/abs/2212.08073
+- type: paper
+- author: Bai et al. (50+)
+- date: 2022-12
+- roles: cross-lab (post-training / alignment)
+- summary: CAI replaces human RLHF feedback with feedback from a
+  model conditioned on a written constitution. Foundational for the
+  Anthropic-side analog of OpenAI's Deliberative Alignment / Safe
+  Completions arc. Required for *what would you change about CAI*
+  follow-ups.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S62 — Agentic Misalignment
+- urls:
+  - https://www.anthropic.com/research/agentic-misalignment
+  - https://arxiv.org/abs/2510.05179
+- type: paper
+- author: Anthropic team
+- date: 2025-06 (blog), 2025-10 (arXiv)
+- roles: Anthropic Alignment / cross-lab
+- summary: Evaluations showing leading models reaching ~96% blackmail
+  rate when given executive-targeting agentic scenarios. Empirically
+  grounds the agentic-threat model. VentureBeat coverage flagged the
+  result publicly.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S63 — SHADE-Arena (sabotage monitoring)
+- urls:
+  - https://www.anthropic.com/research/shade-arena-sabotage-monitoring
+  - https://arxiv.org/abs/2506.15740
+- type: paper
+- author: Kutasov et al.
+- date: 2025-06
+- roles: Anthropic Alignment / cross-lab
+- summary: Evaluation arena for sabotage detection in agentic LLMs.
+  Standardized environments + scoring; pairs with Petri as the
+  canonical Anthropic sabotage-eval surface.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S64 — Auditing LMs for Hidden Objectives
+- urls:
+  - https://www.anthropic.com/research/auditing-hidden-objectives
+  - https://arxiv.org/abs/2503.10965
+- type: paper
+- author: Marks et al.
+- date: 2025-03
+- roles: Anthropic Alignment / cross-lab (auditing methodology)
+- summary: Black-box methodology for auditing LMs for hidden
+  objectives. Direct precursor to Petri's design philosophy. Required
+  reading for *design an audit for behavior X* probes.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S65 — Many-Shot Jailbreaking
+- urls:
+  - https://www.anthropic.com/research/many-shot-jailbreaking
+- type: paper
+- author: Anil, Durmus, Panickssery, Sharma + others
+- date: 2024-04 (NeurIPS 2024)
+- roles: cross-lab (adversarial robustness)
+- summary: Long-context jailbreak technique that scales with the
+  number of in-context demonstrations. Shifted the adversarial-
+  robustness threat model materially. Pairs with OpenAI's Instruction
+  Hierarchy [S32].
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S66 — Sycophancy in Language Models
+- urls:
+  - https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models
+  - https://arxiv.org/abs/2310.13548
+- type: paper
+- author: Sharma et al.
+- date: 2023-10 (ICLR 2024)
+- roles: cross-lab (reward hacking)
+- summary: Empirical sycophancy characterization. Cross-lab canonical
+  alongside Lilian Weng's reward-hacking post [S46] and the GPT-4o
+  retrospective [S41].
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S67 — Anthropic interpretability canon
+- urls:
+  - https://transformer-circuits.pub/2022/toy_model/index.html
+  - https://transformer-circuits.pub/2023/monosemantic-features
+  - https://transformer-circuits.pub/2024/scaling-monosemanticity/
+  - https://transformer-circuits.pub/2025/crosscoder-diffing-update/index.html
+  - https://transformer-circuits.pub/2025/july-update/index.html
+  - https://www.anthropic.com/research/evaluating-feature-steering
+  - https://www.anthropic.com/research/engineering-challenges-interpretability
+  - https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions
+  - https://arxiv.org/abs/2308.03296
+- type: paper / blog
+- author: Olah, Bricken, Elhage, Jermyn, Henighan, Templeton, Grosse,
+  et al.
+- date: 2022-2025
+- roles: Anthropic Interpretability / cross-lab
+- summary: The full Anthropic interpretability canon: Toy Models of
+  Superposition (2022), Towards Monosemanticity (2023), Scaling
+  Monosemanticity on Sonnet 3 (2024), Crosscoder Model Diffing (2025),
+  Influence Functions (2023), feature steering. Required end-to-end
+  for any Anthropic interpretability-track loop; expected fluency on
+  OpenAI alignment loops too.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S68 — Sam Bowman public writing
+- urls:
+  - https://sleepinyourhat.github.io/
+  - https://sleepinyourhat.github.io/faq/
+  - https://sleepinyourhat.github.io/checklist/
+  - https://www.alignmentforum.org/users/sbowman
+- type: blog
+- author: Sam Bowman
+- date: rolling
+- roles: Anthropic Alignment hiring signal
+- summary: Bowman's FAQ and *The Checklist: What Succeeding at AI
+  Safety Will Involve* are widely cited as canonical "what does
+  Anthropic look for / what does success look like" references.
+  His FAQ states he hires for strong industry/OSS engineering +
+  some alignment context.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S69 — Ethan Perez essays (project selection + empirical tips)
+- urls:
+  - https://www.alignmentforum.org/posts/7GmDs4BqrFW3kk4nP/how-i-select-alignment-research-projects
+  - https://www.alignmentforum.org/posts/dZFpEdKyb9Bf4xYn7/tips-for-empirical-alignment-research
+- type: blog
+- author: Ethan Perez
+- date: 2024
+- roles: Anthropic Alignment hiring signal
+- summary: Perez's project-selection criteria + empirical-alignment-
+  research tips. Widely treated as a hiring proxy. Perez runs the
+  MATS Megastream (Anthropic + OpenAI) so the criteria carry across
+  labs.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S70 — Hubinger introducing Alignment Stress-Testing
+- urls:
+  - https://www.alignmentforum.org/posts/EPDSdXr8YbsDkgsDG/introducing-alignment-stress-testing-at-anthropic
+- type: blog
+- author: Evan Hubinger
+- date: 2024-01
+- roles: Anthropic Alignment Science (sub-team) / cross-lab
+- summary: The original announcement post for Anthropic's Alignment
+  Stress-Testing team. Frames the team's mandate (red-team Anthropic's
+  own alignment plans). Useful for *what does alignment research mean
+  at Anthropic* probes.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S71 — Andrey Goncharov "I failed my Anthropic interview"
+- url: https://blog.goncharov.page/i-failed-my-anthropic-interview-and-came-to-tell-you-all-about-it-so-you-dont-have-to
+- type: blog (first-person)
+- author: Andrey Goncharov
+- date: 2025-02
+- roles: Anthropic Fellowship track (research IC)
+- summary: **Most-detailed first-person Anthropic-alignment loop
+  writeup publicly available.** Names rounds: recruiter, automated
+  4-level API-implementation coding, 5h take-home, virtual onsite
+  with research brainstorm + values round. Failure mode: research
+  brainstorm with the head of alignment. **Closes the FP-account
+  gap** that S24 flagged for OpenAI; nothing this clean exists for
+  OpenAI Alignment yet.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S72 — Anthropic Fellows Program 2026
+- urls:
+  - https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/
+  - https://alignment.anthropic.com/2024/anthropic-fellows-program/
+  - https://job-boards.greenhouse.io/anthropic/jobs/5023394008
+  - https://job-boards.greenhouse.io/anthropic/jobs/5183044008
+  - https://job-boards.greenhouse.io/anthropic/jobs/5030244008
+  - https://job-boards.greenhouse.io/anthropic/jobs/5183053008
+- type: official
+- author: Anthropic
+- date: 2025-2026
+- roles: Anthropic Fellows pipeline
+- summary: 2-cohort 2026 (May & July). Stipend $3,850/wk USD,
+  ~$15k/mo compute, 4-month engagement. No PhD required. Focus
+  areas: scalable oversight, adversarial robustness, AI control,
+  model organisms, mech interp, AI security, model welfare. Greenhouse
+  IDs for current openings tracked.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S73 — Anthropic Frontier Red Team
+- urls:
+  - https://red.anthropic.com/
+  - https://red.anthropic.com/2025/ai-for-cyber-defenders/
+  - https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team
+  - https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety
+- type: official
+- author: Logan Graham + FRT (~15 researchers, sits under Jack Clark
+  policy)
+- date: 2024-2026 rolling
+- roles: Anthropic Frontier Red Team
+- summary: Cyber, biosecurity, autonomous systems red-team. Policy-
+  division placement is unusual. Useful for FRT-track alignment
+  candidates and for *Why Anthropic vs OpenAI* (Anthropic's red-team
+  publishes more publicly than OpenAI's Preparedness team does).
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S74 — Kyle Fish + model welfare
+- urls:
+  - https://www.anthropic.com/research/exploring-model-welfare
+  - https://80000hours.org/podcast/episodes/kyle-fish-ai-welfare-anthropic/
+  - https://techcrunch.com/2025/04/24/anthropic-is-launching-a-new-program-to-study-ai-model-welfare/
+  - https://time.com/collections/time100-ai-2025/7305847/kyle-fish/
+- type: official + podcast + press
+- author: Kyle Fish (Anthropic) + 80,000 Hours
+- date: 2025-04 onward
+- roles: Anthropic Model Welfare
+- summary: Kyle Fish is the first full-time AI-welfare hire at any
+  frontier lab; collaborates with Eleos AI. P(Claude conscious today)
+  ~15% (NYT-paraphrased range). "Spiritual bliss attractor state"
+  finding from welfare experiments. TIME 100 in AI 2025.
+- confidence: medium
+- ingested_at: 2026-05-08
+
+## S75 — Anthropic candidate AI guidance + Anthropic Interviewer
+- urls:
+  - https://www.anthropic.com/candidate-ai-guidance
+  - https://www.anthropic.com/research/anthropic-interviewer
+- type: official
+- author: Anthropic
+- date: 2025-2026
+- roles: Anthropic hiring policy
+- summary: Anthropic's explicit policy on when AI is/isn't allowed in
+  interviews. Take-home defaults: do NOT use Claude unless told
+  otherwise. *Anthropic Interviewer* is an internal tool announced
+  publicly — meta-relevant for "why Anthropic" framing.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S76 — Levels.fyi + Glassdoor + Signalfire (Anthropic comp/retention)
+- urls:
+  - https://www.levels.fyi/companies/anthropic/salaries
+  - https://www.levels.fyi/companies/anthropic/salaries/software-engineer/title/research-scientist
+  - https://www.glassdoor.com/Interview/Anthropic-Member-Of-Technical-Staff-Interview-Questions-EI_IE8109027.0,9_KO10,35.htm
+  - https://www.glassdoor.com/Salary/Anthropic-Salaries-E8109027.htm
+  - https://www.signalfire.com/blog/anthropic-talent-retention
+  - https://fortune.com/2025/08/04/billionaire-anthropic-ceo-dario-amodei-ai-staffers-poaching-meta-mark-zuckerberg-100k-six-figure-salaries-openai-sam-altman/
+- type: data + glassdoor + press
+- author: Levels.fyi + Glassdoor + Signalfire + Fortune
+- date: 2025-2026 rolling
+- roles: meta (comp / retention)
+- summary: RS median ~$746K, top reported $1.05M (single self-report).
+  SF bands $555K-$741K+. Glassdoor MTS-Anthropic interview difficulty
+  4.5/5; 33% positive experience, 38 self-reports. Signalfire
+  reports ~80% 2y retention vs OpenAI ~67% (cited as Anthropic-
+  internal stat, not independently audited). Fortune covers Dario
+  refusing Meta $100M poaching match.
+- confidence: medium (especially retention)
+- ingested_at: 2026-05-08
+
+## S77 — Aggregator Anthropic interview guides
+- urls:
+  - https://igotanoffer.com/en/advice/anthropic-interview-process
+  - https://igotanoffer.com/en/advice/anthropic-interview-questions
+  - https://igotanoffer.com/en/advice/why-anthropic-interview-application-question
+  - https://www.interviewquery.com/interview-guides/anthropic-research-scientist
+  - https://www.interviewquery.com/interview-guides/anthropic
+  - https://interviewing.io/anthropic-interview-questions
+  - https://jobright.ai/blog/anthropic-technical-interview-questions-complete-guide-2025/
+  - https://jobright.ai/blog/anthropic-technical-interview-questions-complete-guide-2026/
+- type: blog (aggregator)
+- author: various
+- date: 2024-2026
+- roles: Anthropic (all)
+- summary: Aggregator-quality interview guides. Useful for breadth of
+  loop signals; treat individual claims with care (synthesis-prone).
+  Concurrence on: small coding bank, mandatory research presentation,
+  values round as #1 reject reason, references heavy.
+- confidence: low-medium
+- ingested_at: 2026-05-08
+
+## S78 — Dwarkesh Patel × Anthropic episodes
+- urls:
+  - https://www.dwarkesh.com/p/sholto-douglas-trenton-bricken
+  - https://www.dwarkesh.com/p/sholto-trenton-2
+  - https://www.dwarkesh.com/p/scaling-ama
+  - https://www.dwarkesh.com/p/dario-amodei
+  - https://www.dwarkesh.com/p/dario-amodei-2
+- type: podcast / video
+- author: Dwarkesh Patel × (Sholto Douglas + Trenton Bricken) and
+  Dwarkesh × Dario Amodei (3 eps)
+- date: 2024-2026 rolling
+- roles: Anthropic (general signal)
+- summary: Most-watched public talks giving a feel for Anthropic's
+  research bar. Sholto + Trenton episodes (Mar 2024 + May 2025) are
+  the canonical interpretability + scaling reference points; Dario
+  episodes track strategy/policy. Zvi Mowshowitz substack writes
+  detailed notes on each.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S79 — Lex Fridman × Dario Amodei #452
+- urls:
+  - https://lexfridman.com/dario-amodei/
+- type: podcast / video
+- author: Lex Fridman × Dario Amodei + Amanda Askell + Chris Olah
+- date: 2024-11
+- roles: Anthropic (general signal)
+- summary: Long-form interview featuring Dario, Amanda Askell (model
+  behavior / Constitutional AI), Chris Olah (interpretability). Useful
+  for cultural calibration before behavioral rounds.
+- confidence: high
+- ingested_at: 2026-05-08
+
+## S80 — 1Point3Acres Anthropic threads
+- urls:
+  - https://www.1point3acres.com/interview/company/Anthropic
+  - https://www.1point3acres.com/interview/thread/1137418
+  - https://www.1point3acres.com/interview/thread/1143701
+- type: forum
+- author: 1Point3Acres community (anonymous)
+- date: 2024-2026 rolling
+- roles: Anthropic (research engineer + general)
+- summary: 303 shared Anthropic interview threads. Notable: "Anthropic
+  Research Engineer Onsite Interview Process and Experience"
+  (thread/1137418); Q2/Q6 phone-screen prompts thread (1143701). Use
+  for breadth on the coding bank.
+- confidence: low (anonymous, mostly Chinese-language)
+- ingested_at: 2026-05-08

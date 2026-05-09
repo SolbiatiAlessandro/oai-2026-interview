@@ -39,15 +39,31 @@ induced misalignment. Editing them up reduces emergent misalignment
 on the Anthropic-style "natural emergent misalignment from production
 RL" [S54] distribution.
 
-## Background you must own
+## Background you must own — the Anthropic interpretability canon
 
-(From Anthropic, but assumed knowledge in OpenAI interpretability
-loops.)
+The OpenAI panel assumes you've read this in full. Anthropic publishes
+substantially more interpretability output than OpenAI does, and it's
+all on `transformer-circuits.pub`. Full registry at [S67]; full
+context in [`cross-lab/anthropic-alignment.md`](../cross-lab/anthropic-alignment.md).
 
-- **Toy models of superposition** (Elhage et al., Anthropic 2022) —
+- **Toy models of superposition** (Elhage / Olah, Sep 2022) [S67] —
   why neural networks compress more features than they have neurons,
   and what that does to interpretability.
-- **Scaling monosemanticity** / **Towards Monosemanticity** (Anthropic
+- **Towards Monosemanticity** (Bricken / Olah, Oct 2023) [S67] —
+  first big SAE result on a small model.
+- **Scaling Monosemanticity** on Sonnet 3 (Templeton et al., May
+  2024) [S67] — first big SAE result on a production-scale model.
+- **Crosscoder Model Diffing** (Bricken / Olah, 2025) [S67] — diff
+  features across model checkpoints / fine-tunes.
+- **Influence Functions** (Grosse + 16, Aug 2023) [S67] — EK-FAC on
+  52B-param models; alternative to SAEs for tracing model behavior
+  to training data.
+- **Evaluating Feature Steering** (Anthropic, 2024) [S67] —
+  causal-style evaluation of editing SAE latents.
+- **Engineering Challenges of Scaling Interpretability** (Anthropic,
+  2024) [S67] — the infra story behind running SAEs at production
+  scale.
+- *(Older, still useful)* **Scaling monosemanticity** / **Towards Monosemanticity** (Anthropic
   2024) — first big result of SAEs on a production-scale model.
 - **Circuits** — the older Olah et al. line of work; "induction
   heads" as a canonical mechanistic finding.
@@ -102,4 +118,4 @@ loops.)
 - [Alignment reading list](../prep/alignment-reading-list.md)
 
 ## Sources
-S24, S26, S33, S48, S54
+S24, S26, S33, S48, S54, S67

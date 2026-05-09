@@ -45,6 +45,27 @@ A strong answer combines **at least three** of:
   use; "every time I open ChatGPT I feel there's so much to build,
   unlike Instagram" [S20].
 
+## "Why OpenAI vs Anthropic" — the alignment-loop variant
+
+Asked in nearly every OpenAI alignment-research loop [S24, S77].
+Generic answers fail. The full evidence base is at
+[`cross-lab/openai-vs-anthropic.md`](../cross-lab/openai-vs-anthropic.md).
+
+Three-step structure:
+
+1. **Pick 2 things only OpenAI has** that connect to your interest.
+   Don't list five — depth on 2 beats breadth on 5. Candidates:
+   frontier deployment scale (700M+ ChatGPT users), Deliberative
+   Alignment / Safe Completions [S31, S42] as a coherent
+   architecture bet, the Model Spec [S40], the cross-lab safety eval
+   [S43] as evidence of taking external scrutiny seriously.
+2. **Acknowledge 1 thing Anthropic has** that you considered.
+   Honesty is positively graded [S77]. Candidates: deeper public
+   interpretability output [S67], Petri open-sourced [S57], RSP as
+   a binding commitment [S59], more org stability.
+3. **Connect to your career** — what specifically you want to work
+   on, why now, what evidence-update rules you use.
+
 ## Common follow-ups (and how to handle them) [S1, S3, S20]
 
 - "What about user trust / safety?" → reference an OpenAI safety
@@ -87,6 +108,8 @@ A strong answer combines **at least three** of:
 - [Behavioral round](../rounds/behavioral.md)
 - [Recruiter screen](../rounds/recruiter.md)
 - [Behavioral questions](../questions/behavioral-questions.md)
+- [OpenAI vs Anthropic comparison](../cross-lab/openai-vs-anthropic.md)
+- [Anthropic alignment overview](../cross-lab/anthropic-alignment.md)
 
 ## Sources
-S1, S3, S5, S11, S13, S20
+S1, S3, S5, S11, S13, S20, S24, S26, S31, S40, S42, S43, S57, S59, S67, S77
